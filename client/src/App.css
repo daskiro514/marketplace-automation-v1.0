@@ -1,0 +1,24 @@
+body {
+  font-family: 'Roboto'
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, tr, th, td, div, ul, li, input, label, textarea {
+  font-family: 'Roboto'
+}
+
+.bg-ma-grey {
+  background-color: #F8F9FD;
+}
+
+.rounded-xl {
+  border-radius: 10px;
+}
