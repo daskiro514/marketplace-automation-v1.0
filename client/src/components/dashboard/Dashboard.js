@@ -1,12 +1,20 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import { logout } from '../../actions/auth'
 
-const Dashboard = () => {
+const Dashboard = ({logout}) => {
 
   return (
     <div>
-      Dashboard
+      <div>
+        <button onClick={() => logout()}>Logout</button>
+      </div>
     </div>
   )
 }
 
-export default Dashboard
+const mapStateToProps = state => ({
+})
+
+
+export default connect(mapStateToProps, {logout})(Dashboard)

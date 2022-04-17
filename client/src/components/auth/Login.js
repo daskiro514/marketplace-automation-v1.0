@@ -25,45 +25,62 @@ const Login = ({ login, isAuthenticated }) => {
   }
 
   return (
-    <div className='m-5 p-3 bg-white border rounded-xl shadow'>
-      <h1 className="large text-primary">Sign In</h1>
-      <form className="form" onSubmit={onSubmit}>
-        <div className="form-group">
-          <label>Email</label>
-          <input
-            type="email"
-            placeholder="Email Address"
-            name="email"
-            value={email}
-            onChange={onChange}
-            className='form-control'
-            required
-          />
+    <div className='bg-ma-grey bg-auth container-fluid'>
+      <div className='row justify-content-center'>
+        <div className='mt-3 pt-4'>
+          <div className='col-12'>
+            <img alt='SETIMAGE' className='img-fluid' src='/img/meta-logo-auth.jpg' />
+          </div>
+          <div className='d-flex justify-content-center'>
+            <div className='m-5 p-4 bg-white border rounded-xl shadow auth-card'>
+              <h1 className="large text-ma-auth h2-ma mb-4">Sign In</h1>
+              <form className="form" onSubmit={onSubmit}>
+                <div className="form-group">
+                  <label className='text-ma-primary h4-ma'>Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={email}
+                    onChange={onChange}
+                    className='form-control'
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label className='text-ma-primary h4-ma'>Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    value={password}
+                    onChange={onChange}
+                    className='form-control'
+                    minLength="6"
+                  />
+                </div>
+                <div className='form-group d-flex justify-content-between'>
+                  <div className="form-check">
+                    <label className="form-check-label">
+                      <input type="checkbox" className="form-check-input" value="" />Remember Me
+                    </label>
+                  </div>
+                  <Link to="/forgotPassword" className="form-label h4-ma text-ma-primary">Forgot password?</Link>
+                </div>
+                <div className="form-group">
+                  <button
+                    type='submit'
+                    className='form-control h4-ma text-ma-auth'
+                  >
+                    Sign In <i className='fa fa-long-arrow-right'></i><span></span>
+                  </button>
+                </div>
+              </form>
+              <p className="my-1 h4-ma text-ma-auth">
+                Don't have an account? <Link to="/register" className='h4-ma text-ma-primary'>Sign Up</Link>
+              </p>
+            </div>
+          </div>
         </div>
-        <div className="form-group">
-          <label>Password</label>
-          <input
-            type="password"
-            placeholder="Password"
-            name="password"
-            value={password}
-            onChange={onChange}
-            className='form-control'
-            minLength="6"
-          />
-        </div>
-        <Link to="/forgotPassword" className="form-label pb-2">Forgot password?</Link>
-        <div className="form-group">
-          <input
-            type="submit"
-            className="form-control"
-            value="Login"
-          />
-        </div>
-      </form>
-      <p className="my-1">
-        Don't have an account? <Link to="/register">Sign Up</Link>
-      </p>
+      </div>
     </div>
   )
 }

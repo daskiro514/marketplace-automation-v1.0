@@ -19,6 +19,77 @@ h1, h2, h3, h4, h5, h6, p, span, tr, th, td, div, ul, li, input, label, textarea
   background-color: #F8F9FD;
 }
 
+.bg-auth {
+  min-height: 100vh;
+}
+
 .rounded-xl {
   border-radius: 10px;
+}
+
+.auth-card {
+  width: 700px
+}
+
+@media (max-width: 768px) {
+  .auth-card {
+    width: 500px
+  }
+}
+
+@media (max-width: 500px) {
+  .auth-card {
+    width: 350px
+  }
+}
+
+.text-ma-auth {
+  color: rgba(11, 57, 84, 0.78);
+}
+
+.text-ma-primary {
+  color: #0B3954;
+}
+
+.text-ma-secondary {
+  color: #BFD7EA;
+}
+
+.bg-auth .form-control {
+  background: #DFEBF5;
+  border: 1px solid rgba(11, 57, 84, 0.78);
+  color: rgba(11, 57, 84, 0.78);
+  height: 50px;
+}
+
+.h1-ma {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+}
+
+.h2-ma {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.h3-ma {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.h4-ma {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
 }
