@@ -5,13 +5,13 @@ const LineChart = () => {
 
   const series = [{
     name: "Desktops",
-    data: [10, 41, 35, 51, 49, 62, 69, 91, 148, 66]
+    data: [10, 41, 35, 51, 49, 62, 69, 91, 148, 66],
   }]
 
   const options = {
     chart: {
       height: 350,
-      type: 'line',
+      type: 'area',
       zoom: {
         enabled: false
       }
@@ -20,13 +20,18 @@ const LineChart = () => {
       enabled: false
     },
     stroke: {
-      curve: 'straight'
+      curve: 'smooth',
+      colors: ['#0B3954'],
+      width: 1
     },
     grid: {
       row: {
         colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
         opacity: 0.5
       },
+    },
+    fill: {
+      colors: ['#bed7eb']
     },
     xaxis: {
       categories: ['Jan 6', 'Jan 7', 'Jan 8', 'Jan 9', 'Jan 10', 'Jan 11', 'Jan 12', 'Jan 13', 'Jan 14', 'Jan 15'],
@@ -40,7 +45,7 @@ const LineChart = () => {
         <div className='text-ma-detail text-ma-secondary'>Gross sales from Jan 6 to Jan 15</div>
       </div>
       <div id="chart">
-        <ReactApexChart options={options} series={series} type="line" height={350} />
+        <ReactApexChart options={options} series={series} type="area" height={350} />
       </div>
     </div>
   )

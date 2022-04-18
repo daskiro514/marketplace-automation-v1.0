@@ -22,6 +22,9 @@ const PieChart = ({ title }) => {
         }
       }
     },
+    fill: {
+      colors: ['#0B3954', '#bed7eb', '#d8e6f3', '#f8f9fd']
+    },
     dataLabels: {
       formatter(val, opts) {
         const name = opts.w.globals.labels[opts.seriesIndex]
@@ -36,8 +39,10 @@ const PieChart = ({ title }) => {
   return (
     <div className='bg-white rounded-xl p-2 my-2 shadow'>
       <div className='text-uppercase h3-ma text-ma-primary'>{title}</div>
-      <div id="chart">
-        <ReactApexChart options={options} series={series} type="pie" />
+      <div className='p-3'>
+        <div id="chart">
+          <ReactApexChart options={options} series={series} type="pie" />
+        </div>
       </div>
     </div>
   )

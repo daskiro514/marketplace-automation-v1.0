@@ -15,6 +15,46 @@ h1, h2, h3, h4, h5, h6, p, span, tr, th, td, div, ul, li, input, label, textarea
   font-family: 'Roboto'
 }
 
+.badge-ma {
+  border-radius: 50rem;
+  color: inherit;
+  width: 100px;
+  padding: 3px;
+  text-align: center;
+}
+
+.badge-ma-Pending {
+  background: rgba(255, 179, 2, 0.5);
+}
+
+.badge-ma-Canceled {
+  background: rgba(255, 56, 56, 0.5);
+}
+
+.badge-ma-Shipped {
+  background: rgba(45, 204, 255, 0.5);
+}
+
+.badge-ma-Complete {
+  background: rgba(86, 240, 0, 0.5);
+}
+
+.bg-ma-warning {
+  background: rgba(255, 179, 2, 0.5);
+}
+
+.bg-ma-danger {
+  background: rgba(255, 56, 56, 0.5);
+}
+
+.bg-ma-info {
+  background: rgba(45, 204, 255, 0.5);
+}
+
+.bg-ma-success {
+  background: rgba(86, 240, 0, 0.5);
+}
+
 .bg-ma-grey {
   background-color: #F8F9FD;
 }
@@ -61,6 +101,30 @@ h1, h2, h3, h4, h5, h6, p, span, tr, th, td, div, ul, li, input, label, textarea
 
 .text-ma-secondary {
   color: #BFD7EA;
+}
+
+.text-ma-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.text-ma-content {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.text-ma-detail {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .bg-auth .form-control {
@@ -157,28 +221,4 @@ h1, h2, h3, h4, h5, h6, p, span, tr, th, td, div, ul, li, input, label, textarea
 
 .selected {
   color: #FFFBFA;
-}
-
-.text-ma-title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 28px;
-}
-
-.text-ma-content {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 42px;
-}
-
-.text-ma-detail {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
 }
