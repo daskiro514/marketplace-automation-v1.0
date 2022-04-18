@@ -23,6 +23,14 @@ h1, h2, h3, h4, h5, h6, p, span, tr, th, td, div, ul, li, input, label, textarea
   min-height: 100vh;
 }
 
+.h-100 {
+  min-height: 100vh;
+}
+
+.bg-ma-primary {
+  background-color: #0B3954;
+}
+
 .rounded-xl {
   border-radius: 10px;
 }
@@ -92,4 +100,85 @@ h1, h2, h3, h4, h5, h6, p, span, tr, th, td, div, ul, li, input, label, textarea
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
+}
+
+
+
+
+.sidebar {
+  min-height: 100vh;
+}
+
+.sidebar hr {
+  border-top: 1px solid #BFD7EA !important;
+}
+
+.signoutLink {
+  position: fixed;
+  bottom: 20px;
+  width: 16.666667% !important;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    min-height: inherit;
+  }
+
+  .signoutLink {
+    position: inherit;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 100% !important;
+  }
+}
+
+.menuItem {
+  font-size: 18px;
+  color: #BFD7EA;
+}
+
+.menuItem img {
+  width: 25px;
+  height: 25px;
+  margin-right: 7px;
+}
+
+.menuItem i {
+  font-size: 25px;
+  margin-right: 7px;
+}
+
+.menuItem:hover {
+  background-color: rgba(61, 189, 143, 0.4);
+  border-radius: 10px;
+  cursor: pointer;
+  color: #FFFBFA;
+}
+
+.selected {
+  color: #FFFBFA;
+}
+
+.text-ma-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.text-ma-content {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.text-ma-detail {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
 }

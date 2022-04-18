@@ -34,7 +34,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
   }
 
   return (
-    <div className='bg-ma-grey bg-auth container-fluid'>
+    <div className='bg-ma-grey h-100 container-fluid'>
       <div className='row justify-content-center'>
         <div className='mt-3 pt-4'>
           <div className='col-12'>
