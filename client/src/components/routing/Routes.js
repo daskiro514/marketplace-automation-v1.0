@@ -10,6 +10,7 @@ import Products from '../products/Products'
 import Templates from '../templates/Templates'
 import BulkUploader from '../bulk-uploader/BulkUploader'
 import Orders from '../orders/Orders'
+import OrderDetail from '../orders/OrderDetail'
 import Settings from '../settings/Settings'
 
 const Routes = props => {
@@ -24,6 +25,7 @@ const Routes = props => {
         <PrivateRoute path="/templates" component={Templates} />
         <PrivateRoute path="/bulk-uploader" component={BulkUploader} />
         <PrivateRoute path="/orders" component={Orders} />
+        <PrivateRoute path="/order/:id" component={OrderDetail} />
         <PrivateRoute path="/settings" component={Settings} />
         <Route component={NotFound} />
       </Switch>

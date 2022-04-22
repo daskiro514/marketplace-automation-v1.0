@@ -42,7 +42,7 @@ const Login = ({ login, isAuthenticated }) => {
                     name="email"
                     value={email}
                     onChange={onChange}
-                    className='form-control'
+                    className='form-control bg-ma-input'
                     required
                   />
                 </div>
@@ -53,7 +53,7 @@ const Login = ({ login, isAuthenticated }) => {
                     name="password"
                     value={password}
                     onChange={onChange}
-                    className='form-control'
+                    className='form-control bg-ma-input'
                     minLength="6"
                   />
                 </div>
@@ -68,7 +68,7 @@ const Login = ({ login, isAuthenticated }) => {
                 <div className="form-group">
                   <button
                     type='submit'
-                    className='form-control h4-ma text-ma-auth'
+                    className='form-control h4-ma text-ma-auth bg-ma-secondary'
                   >
                     Sign In <i className='fa fa-long-arrow-right'></i><span></span>
                   </button>

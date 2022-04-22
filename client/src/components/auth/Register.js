@@ -52,7 +52,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
                         name="firstName"
                         value={firstName}
                         onChange={onChange}
-                        className='form-control'
+                        className='form-control bg-ma-input'
                         required
                       />
                     </div>
@@ -64,7 +64,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
                         name="lastName"
                         value={lastName}
                         onChange={onChange}
-                        className='form-control'
+                        className='form-control bg-ma-input'
                         required
                       />
                     </div>
@@ -76,7 +76,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
                         type="email"
                         name="email"
                         value={email}
-                        className='form-control'
+                        className='form-control bg-ma-input'
                         onChange={onChange}
                         required
                       />
@@ -89,7 +89,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
                         name="organization"
                         value={organization}
                         onChange={onChange}
-                        className='form-control'
+                        className='form-control bg-ma-input'
                         required
                       />
                     </div>
@@ -102,7 +102,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
                         name="password"
                         value={password}
                         onChange={onChange}
-                        className='form-control'
+                        className='form-control bg-ma-input'
                         minLength="6"
                       />
                     </div>
@@ -115,7 +115,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
                         name="password2"
                         value={password2}
                         onChange={onChange}
-                        className='form-control'
+                        className='form-control bg-ma-input'
                         minLength="6"
                       />
                     </div>
@@ -124,7 +124,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
                 <div className="form-group pt-4">
                   <button
                     type='submit'
-                    className='form-control h4-ma text-ma-auth'
+                    className='form-control bg-ma-secondary h4-ma text-ma-auth'
                   >
                     Sign Up <i className='fa fa-long-arrow-right'></i><span></span>
                   </button>

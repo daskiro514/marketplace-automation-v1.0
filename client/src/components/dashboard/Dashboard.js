@@ -40,7 +40,7 @@ const Dashboard = () => {
     <div className='container-fluid'>
       <div className='row'>
         <Sidebar />
-        <div className='col-lg-10 col-md-9'>
+        <div className='col-lg-10 col-md-9 p-0'>
           <div className='p-4 bg-ma-grey h-100'>
             <Header />
             <Tiles tiles={tiles} />
@@ -61,8 +61,8 @@ const Dashboard = () => {
                     <div className='text-ma-secondary text-ma-detail'>Most recent orders</div>
                   </div>
                   <div className='table-responsive'>
-                    <table className='table text-ma-primary text-ma-detail'>
-                      <thead>
+                    <table className='table text-ma-primary text-ma-detail table-borderless'>
+                      <thead className='border-bottom'>
                         <tr>
                           <th>ID</th>
                           <th>Status</th>

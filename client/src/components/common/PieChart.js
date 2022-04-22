@@ -3,7 +3,7 @@ import ReactApexChart from 'react-apexcharts'
 
 const PieChart = ({ title }) => {
 
-  const series = [60, 25, 15]
+  const series = [75, 15, 10]
   const options = {
     chart: {
       width: '100%',

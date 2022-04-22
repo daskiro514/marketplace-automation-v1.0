@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5, h6, p, span, tr, th, td, div, ul, li, input, label, textarea
   font-family: 'Roboto'
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .badge-ma {
   border-radius: 50rem;
   color: inherit;
@@ -31,11 +35,19 @@ h1, h2, h3, h4, h5, h6, p, span, tr, th, td, div, ul, li, input, label, textarea
   background: rgba(255, 56, 56, 0.5);
 }
 
+.badge-ma-danger {
+  background: rgba(255, 56, 56, 0.5);
+}
+
 .badge-ma-Shipped {
   background: rgba(45, 204, 255, 0.5);
 }
 
 .badge-ma-Complete {
+  background: rgba(86, 240, 0, 0.5);
+}
+
+.badge-ma-success {
   background: rgba(86, 240, 0, 0.5);
 }
 
@@ -71,6 +83,18 @@ h1, h2, h3, h4, h5, h6, p, span, tr, th, td, div, ul, li, input, label, textarea
   background-color: #0B3954;
 }
 
+.text-white {
+  color: white !important;
+}
+
+.bg-ma-secondary {
+  background-color: #BFD7EA;
+}
+
+.bg-ma-input {
+  background-color: #DFEBF5;
+}
+
 .rounded-xl {
   border-radius: 10px;
 }
@@ -99,8 +123,20 @@ h1, h2, h3, h4, h5, h6, p, span, tr, th, td, div, ul, li, input, label, textarea
   color: #0B3954;
 }
 
+.text-ma-success {
+  color: rgba(86, 240, 0, 0.5);
+}
+
+.text-ma-danger {
+  color: rgba(255, 56, 56, 0.5);
+}
+
 .text-ma-secondary {
   color: #BFD7EA;
+}
+
+.text-ma-light {
+  color: rgba(11, 57, 84, 0.76);
 }
 
 .text-ma-title {
@@ -221,4 +257,32 @@ h1, h2, h3, h4, h5, h6, p, span, tr, th, td, div, ul, li, input, label, textarea
 
 .selected {
   color: #FFFBFA;
+}
+
+.border-bottom-ma {
+  border-bottom: 5px solid #0B3954;
+}
+
+.width-150 {
+  width: 150px;
+}
+
+.width-120 {
+  width: 120px;
+}
+
+.border-ma {
+  border: 1px solid rgba(11, 57, 84, 0.78);
+  box-sizing: border-box;
+  border-radius: 6px;
+  min-height: calc(1.5em + 0.75rem + 2px);;
+}
+
+.product-table td {
+  vertical-align: middle;
+  /* max-width: 200px; */
+}
+
+.td-some-width {
+  width: 200px !important;
 }
